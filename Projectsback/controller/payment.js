@@ -2,8 +2,7 @@ const stripe = require("stripe");
 const Users = require("../models/UserSchema");
 const Products = require("../models/ProductsSchema");
 const Orders = require("../models/OrdersSchema");
-const secretkey = "";
-  // "sk_test_51QsOrwD5Bey0sAgQnDNrueTb6hz5HuTYW9c6AdXJRxrsPBBE44Xb3doo2ZmojhBEHD4QIccuethxRhcNvDEDfHlF00PrvxrCdR";
+const secretkey = "sk_test_51QsOrwD5Bey0sAgQnDNrueTb6hz5HuTYW9c6AdXJRxrsPBBE44Xb3doo2ZmojhBEHD4QIccuethxRhcNvDEDfHlF00PrvxrCdR";
 const Stripe = stripe(secretkey);
 
 let ordertab = []; // Note: This array is global and could cause issues with multiple users; consider a better approach
