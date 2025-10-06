@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "https://ecommerce-1-li0a.onrender.com/",
       credentials: true, 
     })
   );
